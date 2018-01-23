@@ -1,6 +1,6 @@
 # Todo NodeJS server
 
-Todo server using NodeJS
+Organizer server using NodeJS
 
 ### To run server
 

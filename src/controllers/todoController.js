@@ -6,11 +6,14 @@ const Group = require('../db/group');
 
 module.exports = function(app) {
     router.get('/', (ctx) => {
-        ctx.body = 'hello';
+        ctx.status = 200;
+        return "{}";
+
     });
 
     router.get('/user/:id', async (ctx) => {
         let user = await User.findById(ctx.params.id);
+        console.log(user)
         ctx.body = user;
         ctx.status = 200;
     });
